@@ -8,12 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var myFoto: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupView()
     }
-
-
+    private func setupView () {
+        addCornerRadiusImage(for: [myFoto] )
+    }
+    
+    private func addCornerRadiusImage(for images: [UIImageView]) {
+        images.forEach {
+            $0.layer.masksToBounds = true
+            $0.layer.cornerRadius = myFoto.frame.height / 2
+        }
+    }
+    
+    
+    
+    
 }
-
