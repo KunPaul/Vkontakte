@@ -1,24 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vkontakte" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2q-By-8bE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZNl-qT-wXk">
+                                <rect key="frame" x="133" y="89" width="140" height="67.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Павел Кунгурцев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="zIA-lV-3lH">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Установить статус" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUz-jl-H9N">
+                                        <rect key="frame" x="0.0" y="27.5" width="116.5" height="16"/>
+                                        <accessibility key="accessibilityConfiguration" label="Установить статус">
+                                            <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKD-Mt-iX8">
+                                        <rect key="frame" x="0.0" y="51.5" width="39" height="16"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myFoto" translatesAutoresizingMaskIntoConstraints="NO" id="1RX-Az-nG1">
+                                <rect key="frame" x="25" y="69" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HdV-Xu-PNG"/>
+                                    <constraint firstAttribute="width" constant="100" id="YwW-yD-Ag0"/>
+                                    <constraint firstAttribute="width" secondItem="1RX-Az-nG1" secondAttribute="height" multiplier="1:1" id="afk-nX-sRd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-nW-0It">
+                                <rect key="frame" x="25" y="206" width="364" height="31"/>
+                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Редактировать"/>
+                            </button>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1l7-dy-JZ5">
+                                <rect key="frame" x="1" y="267" width="412" height="102.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3Q-hd-Z6P">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="102.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="y3Q-hd-Z6P" secondAttribute="height" multiplier="1:1" id="ep4-7K-qrY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="camera" imagePlacement="top" title="История" imagePadding="10" buttonSize="small">
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="10"/>
+                                            <color key="baseForegroundColor" systemColor="linkColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdF-sg-yAu">
+                                        <rect key="frame" x="103.5" y="0.0" width="102" height="102.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="1c6-E8-2cu"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pencil.circle" imagePlacement="top" title="Запись" imagePadding="12" buttonSize="small">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="10"/>
+                                            <color key="baseForegroundColor" systemColor="linkColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYh-Qy-Gl5">
+                                        <rect key="frame" x="206.5" y="0.0" width="102.5" height="102.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="tSz-GK-5LF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="applelogo" imagePlacement="top" title="Фото" imagePadding="12" buttonSize="small">
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="10"/>
+                                            <color key="baseForegroundColor" systemColor="linkColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WUm-VG-ORi">
+                                        <rect key="frame" x="310" y="0.0" width="102" height="102.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="hwo-n6-2Uo"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hands.clap.fill" imagePlacement="top" title="Клип" imagePadding="12" buttonSize="small" titleAlignment="automatic">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                            <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="10"/>
+                                            <color key="baseForegroundColor" systemColor="linkColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZYh-Qy-Gl5" firstAttribute="width" secondItem="ZYh-Qy-Gl5" secondAttribute="height" multiplier="1:1" id="2Nu-Bs-Flb"/>
+                                    <constraint firstItem="fdF-sg-yAu" firstAttribute="width" secondItem="fdF-sg-yAu" secondAttribute="height" multiplier="1:1" id="U8g-uR-RRs"/>
+                                    <constraint firstItem="WUm-VG-ORi" firstAttribute="width" secondItem="WUm-VG-ORi" secondAttribute="height" multiplier="1:1" id="wKU-mN-AJ6"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VXG-2u-fF5">
+                                <rect key="frame" x="1" y="370.5" width="392" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="uZP-ya-qz5"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-MT-PEo">
+                                <rect key="frame" x="15" y="386.5" width="184.5" height="194"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfL-Hv-RMR">
+                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="36"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="house" imagePlacement="leading" title="Город: Москва" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="10"/>
+                                            <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJG-qX-U3a">
+                                        <rect key="frame" x="0.0" y="42" width="184.5" height="29"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="dot.radiowaves.up.forward" imagePlacement="leading" title="35 подписчиков" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="10"/>
+                                            <color key="baseForegroundColor" systemColor="systemGray3Color"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnS-dN-wBU">
+                                        <rect key="frame" x="0.0" y="77" width="184.5" height="37"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hammer" imagePlacement="leading" title="Указать место работы" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="10"/>
+                                            <color key="baseForegroundColor" systemColor="linkColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmc-9u-gPA">
+                                        <rect key="frame" x="0.0" y="120" width="184.5" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="snowflake" imagePlacement="leading" title="Получит подарок  &gt;" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="10"/>
+                                            <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpq-KV-gzG">
+                                        <rect key="frame" x="0.0" y="160" width="184.5" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="info.circle.fill" imagePlacement="leading" title="Подробная информация" imagePadding="10">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="10"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ghI-7H-QAp"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1l7-dy-JZ5" firstAttribute="top" secondItem="FOJ-nW-0It" secondAttribute="bottom" constant="30" id="7oj-zo-SyB"/>
+                            <constraint firstItem="FOJ-nW-0It" firstAttribute="top" secondItem="ZNl-qT-wXk" secondAttribute="bottom" constant="49.5" id="8Nl-Sy-Uhw"/>
+                            <constraint firstItem="1RX-Az-nG1" firstAttribute="top" secondItem="ghI-7H-QAp" secondAttribute="top" constant="25" id="AKO-b5-r87"/>
+                            <constraint firstItem="1l7-dy-JZ5" firstAttribute="leading" secondItem="ghI-7H-QAp" secondAttribute="leading" constant="1" id="B03-ji-uV5"/>
+                            <constraint firstItem="1l7-dy-JZ5" firstAttribute="centerX" secondItem="ghI-7H-QAp" secondAttribute="centerX" id="LI3-Bl-h9a"/>
+                            <constraint firstItem="VXG-2u-fF5" firstAttribute="top" secondItem="1l7-dy-JZ5" secondAttribute="bottom" constant="1" id="UbV-gQ-CNr"/>
+                            <constraint firstItem="FYb-MT-PEo" firstAttribute="top" secondItem="VXG-2u-fF5" secondAttribute="bottom" constant="15" id="Uxj-ni-QeJ"/>
+                            <constraint firstItem="ZNl-qT-wXk" firstAttribute="top" secondItem="ghI-7H-QAp" secondAttribute="top" constant="45" id="YLq-fT-Gff"/>
+                            <constraint firstItem="VXG-2u-fF5" firstAttribute="leading" secondItem="ghI-7H-QAp" secondAttribute="leading" constant="1" id="agS-1E-fc3"/>
+                            <constraint firstItem="ghI-7H-QAp" firstAttribute="trailing" secondItem="FOJ-nW-0It" secondAttribute="trailing" constant="25" id="ovU-Dg-ipp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VXG-2u-fF5" secondAttribute="trailing" constant="1" id="sUI-kk-Yoo"/>
+                            <constraint firstItem="1RX-Az-nG1" firstAttribute="leading" secondItem="ghI-7H-QAp" secondAttribute="leading" constant="25" id="sfE-Bw-NgL"/>
+                            <constraint firstItem="FYb-MT-PEo" firstAttribute="leading" secondItem="ghI-7H-QAp" secondAttribute="leading" constant="15" id="uEh-hm-hUl"/>
+                            <constraint firstItem="FOJ-nW-0It" firstAttribute="leading" secondItem="ghI-7H-QAp" secondAttribute="leading" constant="25" id="vJO-ti-PP9"/>
+                            <constraint firstItem="ZNl-qT-wXk" firstAttribute="leading" secondItem="1RX-Az-nG1" secondAttribute="trailing" constant="8" symbolic="YES" id="wdP-WC-HSm"/>
+                            <constraint firstItem="ghI-7H-QAp" firstAttribute="trailing" secondItem="1l7-dy-JZ5" secondAttribute="trailing" constant="1" id="y2y-ai-5le"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myFoto" destination="1RX-Az-nG1" id="h9M-fK-TB7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="applelogo" width="15.5" height="20.5"/>
+        <image name="camera" width="24" height="19"/>
+        <image name="dot.radiowaves.up.forward" width="14.5" height="15"/>
+        <image name="hammer" width="24" height="23"/>
+        <image name="hands.clap.fill" width="27" height="25"/>
+        <image name="house" width="23.5" height="22"/>
+        <image name="info.circle.fill" width="20" height="20"/>
+        <image name="myFoto" width="400" height="400"/>
+        <image name="pencil.circle" width="20" height="20"/>
+        <image name="snowflake" width="17.5" height="20"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
