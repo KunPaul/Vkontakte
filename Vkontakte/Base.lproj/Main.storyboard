@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZNl-qT-wXk">
-                                <rect key="frame" x="133" y="89" width="140" height="67.5"/>
+                                <rect key="frame" x="133" y="89" width="140" height="43.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Павел Кунгурцев" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="zIA-lV-3lH">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="19.5"/>
@@ -34,12 +34,6 @@
                                         <color key="textColor" systemColor="linkColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKD-Mt-iX8">
-                                        <rect key="frame" x="0.0" y="51.5" width="39" height="16"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
-                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myFoto" translatesAutoresizingMaskIntoConstraints="NO" id="1RX-Az-nG1">
@@ -51,12 +45,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-nW-0It">
-                                <rect key="frame" x="25" y="206" width="364" height="31"/>
+                                <rect key="frame" x="25" y="182" width="364" height="31"/>
                                 <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Редактировать"/>
                             </button>
                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1l7-dy-JZ5">
-                                <rect key="frame" x="1" y="267" width="412" height="102.5"/>
+                                <rect key="frame" x="1" y="243" width="412" height="102.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3Q-hd-Z6P">
                                         <rect key="frame" x="0.0" y="0.0" width="102.5" height="102.5"/>
@@ -113,14 +107,14 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VXG-2u-fF5">
-                                <rect key="frame" x="1" y="370.5" width="392" height="1"/>
+                                <rect key="frame" x="1" y="346.5" width="392" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="uZP-ya-qz5"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-MT-PEo">
-                                <rect key="frame" x="15" y="386.5" width="184.5" height="194"/>
+                                <rect key="frame" x="15" y="362.5" width="184.5" height="194"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfL-Hv-RMR">
                                         <rect key="frame" x="0.0" y="0.0" width="184.5" height="36"/>
@@ -164,6 +158,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="left" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-TL-FuM">
+                                <rect key="frame" x="121" y="132.5" width="75.5" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="iphone.homebutton" imagePlacement="trailing" title="online" imagePadding="5">
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                    <color key="baseForegroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ghI-7H-QAp"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -173,7 +175,9 @@
                             <constraint firstItem="FOJ-nW-0It" firstAttribute="top" secondItem="ZNl-qT-wXk" secondAttribute="bottom" constant="49.5" id="8Nl-Sy-Uhw"/>
                             <constraint firstItem="1RX-Az-nG1" firstAttribute="top" secondItem="ghI-7H-QAp" secondAttribute="top" constant="25" id="AKO-b5-r87"/>
                             <constraint firstItem="1l7-dy-JZ5" firstAttribute="leading" secondItem="ghI-7H-QAp" secondAttribute="leading" constant="1" id="B03-ji-uV5"/>
+                            <constraint firstItem="ZGh-TL-FuM" firstAttribute="firstBaseline" secondItem="RUz-jl-H9N" secondAttribute="baseline" constant="25" id="EMk-x6-w9U"/>
                             <constraint firstItem="1l7-dy-JZ5" firstAttribute="centerX" secondItem="ghI-7H-QAp" secondAttribute="centerX" id="LI3-Bl-h9a"/>
+                            <constraint firstItem="ghI-7H-QAp" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZGh-TL-FuM" secondAttribute="trailing" symbolic="YES" id="SHG-rG-ez7"/>
                             <constraint firstItem="VXG-2u-fF5" firstAttribute="top" secondItem="1l7-dy-JZ5" secondAttribute="bottom" constant="1" id="UbV-gQ-CNr"/>
                             <constraint firstItem="FYb-MT-PEo" firstAttribute="top" secondItem="VXG-2u-fF5" secondAttribute="bottom" constant="15" id="Uxj-ni-QeJ"/>
                             <constraint firstItem="ZNl-qT-wXk" firstAttribute="top" secondItem="ghI-7H-QAp" secondAttribute="top" constant="45" id="YLq-fT-Gff"/>
@@ -185,6 +189,7 @@
                             <constraint firstItem="FOJ-nW-0It" firstAttribute="leading" secondItem="ghI-7H-QAp" secondAttribute="leading" constant="25" id="vJO-ti-PP9"/>
                             <constraint firstItem="ZNl-qT-wXk" firstAttribute="leading" secondItem="1RX-Az-nG1" secondAttribute="trailing" constant="8" symbolic="YES" id="wdP-WC-HSm"/>
                             <constraint firstItem="ghI-7H-QAp" firstAttribute="trailing" secondItem="1l7-dy-JZ5" secondAttribute="trailing" constant="1" id="y2y-ai-5le"/>
+                            <constraint firstItem="ZGh-TL-FuM" firstAttribute="leading" secondItem="1RX-Az-nG1" secondAttribute="trailing" constant="-4" id="zdA-qc-iBD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -204,6 +209,7 @@
         <image name="hands.clap.fill" width="27" height="25"/>
         <image name="house" width="23.5" height="22"/>
         <image name="info.circle.fill" width="20" height="20"/>
+        <image name="iphone.homebutton" width="12.5" height="20.5"/>
         <image name="myFoto" width="400" height="400"/>
         <image name="pencil.circle" width="20" height="20"/>
         <image name="snowflake" width="17.5" height="20"/>
